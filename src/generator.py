@@ -8,7 +8,7 @@ def mensaje(i):
     if random.random() < 0.02:
         return "mensaje-corrupto"
     return json.dumps({
-        "conductor_id": f"CHOFER-{random.randint(1, 20):03d}",,
+        "conductor_id": f"CHOFER-{random.randint(1, 20):03d}",
         "lat": round(-8.11 + random.uniform(-0.05, 0.05), 6),
         "lon": round(-79.03 + random.uniform(-0.05, 0.05), 6),
         "ts": int(time.time()),
